@@ -1,0 +1,169 @@
+
+.App{
+  background-color: lightblue;
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%;
+}
+
+.calculatorHolder{
+  position: relative;
+  left: 32em;
+  top: 10em;
+  width: 30em;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px black;
+  padding: 0 15px 30px 30px;
+  background-color: white;
+}
+
+.display{
+  display:flex;
+  flex-flow: row;
+}
+
+.display .displayInput{
+  height: 2em;
+  width: 9em;
+  margin: 30px 0 0 0;
+
+}
+
+.display p{
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+.buttonHolder {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  left: 6em;
+}
+
+.buttonHolder button {
+  width: 5em;
+  height: 3em;
+}
+
+.buttonHolder .setOfNumericalButtons{
+  display: flex;
+  flex-flow: column;
+}
+
+.buttonHolder .numericalButtonHolder{
+  display: flex;
+  flex-flow: row;
+}
+
+.buttonHolder .operationalButtonHolder{
+  display: flex;
+  flex-flow: column;
+}
+
+@media only screen and (max-width: 1280px){
+  .calculatorHolder{
+    left: 25em;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+    .calculatorHolder{
+      left: 17em;
+    }
+}
+
+@media only screen and (max-width: 768px){
+  .calculatorHolder{
+    left: 8em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .App{
+    width: 100vw;
+    height: 100vh;
+    
+  }
+
+  .calculatorHolder{
+    left: 1em;
+    width: 82vw;
+  }
+
+  .display{
+    left: 6.5em;
+    position: relative;
+    flex-flow: column;
+    width: 25vw;
+    padding: 20px 0;
+  }
+
+  .display p{
+    position: relative;
+    left: 10vw;
+    margin: 0;
+  }
+
+  .display .displayInput{
+    margin: 0;
+    height: 2em;
+    width: 9em;
+
+  }
+  .buttonHolder{
+    left: 4em;
+    width: 52vw;
+  }
+
+  .buttonHolder button{
+    width: 4em;
+    height: 4em;
+  }
+  
+}
+
+
+@media only screen and (max-width: 380px) {
+  .App{
+    width: 100vw;
+    height: 100vh;
+    
+  }
+
+  .calculatorHolder{
+    left: 1em;
+    width: 82vw;
+  }
+
+  .display{
+    left: 5.5em;
+    position: relative;
+    flex-flow: column;
+    width: 25vw;
+    padding: 20px 0;
+  }
+
+  .display p{
+    position: relative;
+    left: 10vw;
+    margin: 0;
+  }
+
+  .display .displayInput{
+    margin: 0;
+    height: 2em;
+    width: 9em;
+
+  }
+  .buttonHolder{
+    left: 3em;
+    width: 52vw;
+  }
+
+  .buttonHolder button{
+    width: 4em;
+    height: 4em;
+  }
+  
+}
